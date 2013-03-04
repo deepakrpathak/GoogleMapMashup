@@ -1,0 +1,161 @@
+html { height: 100% }
+#main, body { height: 100%; margin: 0; padding: 0;opacity:.9; }
+body {
+     color: #fff;
+     font: 14px/14px 'Seoge UI', sans-serif;
+}
+#map {
+	 height: 100%;
+	 width:100%; 
+	 position:absolute;
+	 z-index: 1; /* Has to be at least one smaller in value than the geocode and panel z-index */
+	 top: 0;
+	 bottom:0;
+	 left:0;
+	 right:0;
+     color: #a9a9a9;
+     padding-top: 5px;
+     font: 20px 'Oswald', sans-serif;
+}
+#geocode{
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    overflow: visible !important;
+    padding: 40px;
+    position: relative;
+    top: 100px;
+    width: 800px;
+    font: 18px/18px 'Seoge UI', sans-serif;
+    z-index: 2 ;  /* Has to be at least one increment larger in value than the Google Maps z-index */
+}
+p, label{
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin: 0 0 1em 0; 
+    
+}
+
+p strong{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    clear: both;
+    color: #72b4b0;
+    display: block;
+    float: left;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 1em 0;
+    padding: 0.2em 0;
+    text-transform: uppercase;
+    width: 100%;        
+}
+#directionPanel {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    overflow: visible !important;
+    padding: 40px;
+    position: relative;
+    top: 20px;
+    width: 30%;
+    z-index: 2 !important;
+    color: #fff;
+    float: right;
+    display: none;
+    font: normal normal 14px/14px 'Seoge UI', sans-serif;
+}
+  
+#message, #directionPanel.hidesudo:before{ display: none }
+
+.switch{
+    background: #DA2C15;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4em;
+    height: 50px;
+    left: -25px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    top: -25px;
+    width: 50px; 
+}
+
+.switch:hover{
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+#container{
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    overflow: visible !important;
+    padding: 40px;
+    position: relative;
+    top: 100px;
+    width: 800px;
+    display: none;
+    z-index: 2 ; /* Has to be at least one increment larger in value than the Google Maps iframe z-index */
+}
+#geocode, #container {
+    font: 24px/24px 'Seoge UI', sans-serif;
+}
+input[type="text"] { width: 400px; } 
+input {
+     background-color: rgba(255, 255, 255, 0.4);
+     border: 5px solid rgba(122, 192, 0, 0.15);
+     padding: 10px;
+     font-family: 'Seoge UI', Arial;
+     color: #4b4b4b;
+     font-size: 24px; 
+     margin-bottom: 15px; 
+     margin-top: 10px; 
+}
+input:focus {
+    border: 5px solid #ff5400; 
+    background-color: rgba(255, 255, 255, 1); 
+} 
+input[type="submit"] { 
+    border: none; 
+    cursor: pointer; 
+    color: #fff; 
+    font-size: 24px;
+    height: 60px; 
+    background-color: #7ac000; 
+    padding: 5px 36px 8px 36px; 
+	background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.23, #619702),
+	    color-stop(0.62, #7ac000)
+	);
+	background: -moz-linear-gradient(
+	    center bottom,
+	    #619702 23%,
+	    #7ac000 62%
+	);
+}
+
+input[type="submit"]:hover { color: #fff; border-bottom: 1px solid rgba(0, 0, 0, 0.4); background-color: #ff5400;
+	background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.23, #c34000),
+	    color-stop(0.62, #ff5400)
+	);
+	background: -moz-linear-gradient(
+	    center bottom,
+	    #c34000 23%,
+	    #ff5400 62%
+	);
+}       
