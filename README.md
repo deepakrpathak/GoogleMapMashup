@@ -1,4 +1,5 @@
 Google Map Mashup
+-----------------------
 
 Installation
 ----------------
