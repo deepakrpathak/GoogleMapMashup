@@ -18,9 +18,8 @@ Use Cases
 
 Known Issues
 ----------------
-1. Works good in Mozilla and Webkit browsers, IE has a weird problem with z-index.
-	- can be solved by making aesthetics a little more IE friendly (read 'bad').
-2. Firefox sometimes takes a long to fallback if user denies to share location.
+
+1. Firefox sometimes takes a long to fallback if user denies to share location.
 
 
 TODO
