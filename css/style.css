@@ -1,5 +1,5 @@
 html { height: 100% }
-#main, body { height: 100%; margin: 0; padding: 0;opacity:.9; }
+#main, body { height: 100%; margin: 0; padding: 0;opacity:.9;position: relative }
 body {
      color: #fff;
      font: 14px/14px 'Seoge UI', sans-serif;

@@ -94,7 +94,7 @@ function failure(error) {
                 break;
         }
     }
-    fallback.innerHTML += "<label for='location'>Enter Your Location <input type='text' id='location' /></label><input type='submit' />";
+    fallback.innerHTML += "<label for='location'>Enter Your Location <input type='text' id='location' /></label><input type='submit' value='Here' />";
     fallback.onsubmit = formResponse;
     document.getElementById("main").appendChild(fallback);
     //origin = document.getElementById("location").value;
